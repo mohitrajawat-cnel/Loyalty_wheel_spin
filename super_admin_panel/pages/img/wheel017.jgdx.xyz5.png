@@ -1,0 +1,8 @@
+modify=20220614122904;perm=adfrw;size=2003;type=file;unique=4E90B6E1U407E9;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-background.scss
+modify=20220614122904;perm=flcdmpe;type=cdir;unique=4E90B6E1U407E8;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0755;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; .
+modify=20220614122904;perm=adfrw;size=1449;type=file;unique=4E90B6E1U407ED;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-profile.scss
+modify=20220614122905;perm=flcdmpe;type=pdir;unique=4E90B6E1U4075B;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0755;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; ..
+modify=20220614122904;perm=adfrw;size=345;type=file;unique=4E90B6E1U407EB;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-horizontal.scss
+modify=20220614122904;perm=adfrw;size=2977;type=file;unique=4E90B6E1U407EE;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-rotate.scss
+modify=20220614122904;perm=adfrw;size=193;type=file;unique=4E90B6E1U407EA;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-blog.scss
+modify=20220614122904;perm=adfrw;size=1002;type=file;unique=4E90B6E1U407EC;UNIX.group=1000;UNIX.groupname=admin;UNIX.mode=0644;UNIX.owner=1000;UNIX.ownername=admin_jgdx_xyz_ftp_user; card-pricing.scss

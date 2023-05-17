@@ -31,6 +31,20 @@ if(isset($_REQUEST['deletestatus']) && isset($_REQUEST['delete']) && $_REQUEST['
   <?php
 }
 
+////////////////delete all players/////////////////
+if(isset($_POST['delete_all_players']))
+{
+
+  $delete_all_users ="DELETE from ".$table_prefix."user_table";
+  mysqli_query($conn,$delete_all_users);
+  ?>
+   <script>
+    window.location.replace('player_list.php');
+   </script>
+  <?php
+}
+////////////////end delete all players/////////////
+
 $export_data = array();
 if(isset($_POST["export_users"])){
 
@@ -261,6 +275,7 @@ if (($handle = fopen($upload, "r")) !== FALSE) {
                     <button type="submit" name="import_users" class="btn btn-dark">Import Users</button>
                 </div>
                  <div class="col-md-6 col-6 text-center">
+                    <button style="float:right;margin-right: 15px;" type="submit" onclick=" return confirm('Are you sure you want to delete all players!')" name="delete_all_players" class="btn btn-dark">Delete All Players</button>
                     <button style="float:right;margin-right: 15px;" type="submit" name="export_users" class="btn btn-dark">Export Users</button>
                     <button style="float:right;margin-right: 10px;" type="submit" name="download_blank_file" class="btn btn-dark">Download File</button>
                 </div>

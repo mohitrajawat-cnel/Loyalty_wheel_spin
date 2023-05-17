@@ -27,6 +27,21 @@ if(isset($id) && $id !='')
    </script>
   <?php
 }
+
+////////////////delete all results////////////////
+if(isset($_POST['delete_all_results']))
+{
+
+  $delete_all_results="DELETE from ".$table_prefix."spin_result";
+  mysqli_query($conn,$delete_all_results);
+  ?>
+   <script>
+    window.location.replace('spin_results.php');
+   </script>
+  <?php
+}
+////////////////end delete reults code////////////
+
 //export spin results
 $export_data = array();
 if(isset($_POST["export_spin_result"])){
@@ -265,7 +280,16 @@ if(isset($id) && $id !='')
                   <div class="row">
                     <div class="col-md-12 col-12 pt-2">
                       <h6 class="text-white text-capitalize ps-3" style="float:left;">Spin Result List</h6>
-                    
+                      <?php 
+
+                      if($user_login_sp == '1' || $user_login_register_method == '1')
+                      {
+                      ?>
+                        <button style="background-color:#337ab7;float:right;margin-left: 10px;" type="submit" name="delete_all_results" onclick=" return confirm('Are you sure you want to delete all results!');" class="btn btn-primary">Delete All Results</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                      }
+                      ?>
+                        
                         <button style="background-color:#337ab7;float:right;" type="submit" name="export_spin_result" class="btn btn-primary">Export Results</button>
                     
                     </div>

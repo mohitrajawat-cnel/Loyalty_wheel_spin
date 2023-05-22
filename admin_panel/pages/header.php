@@ -53,21 +53,21 @@
         ?>
         <?php
         }
-        // if($host_name == 'sgluckydraw88.com' || $host_name == 'luckyspin888.com')
-        // {
+        if($host_name == 'sgluckydraw88.com' || $host_name == 'sgroyalwheel888.com' || $host_name == 'luckyspin888.com' || $host_name == 'luckywheel888.com' || $host_name == 'wheel006.jgdx.xyz')
+        {
           ?>
-          <!-- <li class="nav-item">
-            <a class="nav-link text-white active bg-gradient-primary" href="../pages/spin_results_pagination.php">
+          <li class="nav-item">
+            <a class="nav-link text-white active bg-gradient-primary" href="../pages/optimize_spin_results.php">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">table_view</i>
               </div>
               <span class="nav-link-text ms-1">Spin Results</span>
             </a>
-          </li> -->
+          </li>
         <?php
-        // }
-        // else
-        // {
+        }
+        else
+        {
          
             ?>
             <li class="nav-item">
@@ -80,7 +80,7 @@
             </li>
             <?php
           
-      //  }
+       }
         if($email_method == '1')
         {
             ?>
